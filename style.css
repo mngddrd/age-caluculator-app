@@ -1,0 +1,283 @@
+/**font-family: "Poppins", sans-serif;
+440i
+*/
+
+:root{
+  --Purple:rgb(133, 77, 255);
+  --Light-red:rgb(255, 87, 87);
+  --White:rgb(255, 255, 255);
+  --Off-white:rgb(240, 240, 240);
+  --Light-grey:rgb(219, 219, 219);
+  --Smokey-grey:rgb(113, 111, 111);
+  --Off-black:rgb(20, 20, 20);
+  --Desktop: 1440px;
+  --Mobile: 375px;
+  --font-size: 32px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Off-white);
+  font-family: "Poppins", sans-serif
+}
+
+.cotener-all{
+  
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px 10px 40px;
+  background-color: var(--White);
+  width: 600px;
+  margin-top: 10px;
+  border-radius: 15px 15px 150px  15px;
+  -webkit-box-shadow: 1px 1px 13px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 13px -6px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 13px -6px rgba(0,0,0,0.75);
+  font-family: "Poppins", sans-serif
+}
+.cotener-iner{
+  margin: 20px 30px 0 10px;
+  padding-bottom: 5px;
+}
+
+nav{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  border-bottom: 0.5px solid var(--Light-grey);
+  height: 125px;
+  position: relative;
+  
+}
+
+.all-input{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+button{
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  border-radius: 50%;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  background-color: var(--Purple);
+}
+button img{
+  width: 35px;
+  height: 30px;
+}
+button:active,button:hover{
+  background-color: black;
+  cursor: pointer;
+}
+input:active,input:hover{
+  cursor: pointer;
+  border: 1px solid var(--Purple);
+}
+nav div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+nav input{
+  width: 115px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border: 0.5px solid var(--Light-grey);
+  
+}
+
+nav label{
+  font-weight:600;
+  font-size: 0.8rem;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  gap: 0;
+}
+.year-result{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.months-result{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.day-result{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+h1{
+  font-size: 4.5rem;
+  font-style: italic;
+  font-weight: 800;
+  
+}
+
+span{
+  color: var(--Purple);
+}
+
+.inputP1{
+  color: var(--Light-red);
+  font-style: italic;
+  font-size: 0.6rem;
+}
+
+.inputP2{
+  color: var(--Light-red);
+  font-style: italic;
+  font-size: 0.6rem;
+}
+
+.inputP3{
+  color: var(--Light-red);
+  font-style: italic;
+  font-size: 0.6rem;
+}
+
+.inputP4{
+  color: var(--Light-red);
+  font-style: italic;
+  font-size: 0.6rem;
+}
+
+.inputP5{
+  color: var(--Light-red);
+  font-style: italic;
+  font-size: 0.6rem;
+}
+
+.inputP6{
+  color: var(--Light-red);
+  font-style: italic;
+  font-size: 0.6rem;
+}
+
+.inputP7{
+  color: var(--Light-red);
+  font-style: italic;
+  font-size: 0.6rem;
+}
+
+footer{
+  margin-top: 10px;
+  
+}
+
+.attribution{
+  text-align: center;
+  font-size: small;
+  color: var(--Off-black);
+}
+
+@media (max-width:776px){
+  
+  .cotener-all{
+    margin-top: 10px;
+    width: 70%;
+    height: 325px;
+    padding: 0;
+    
+    border-radius: 15px 15px 80px  15px;
+  }
+  .cotener-iner{
+    margin: 20px 10px 5px 20px;
+    padding:0;
+  }
+  nav{
+    height: 90px;
+  }
+  nav div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-right: 0;
+    
+  }
+  .all-input{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    gap:4px;
+  }
+    nav input{
+      
+    width: 85%;
+    height: 30px;
+    font-size: 80%;
+
+  }
+  nav label{
+    font-weight:700;
+    font-size: 0.5rem;
+    color: var(--Off-black);
+  }
+  button{
+    top:80%;
+    right: 45%;
+    width:40px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button img{
+    width:15px;
+    height:15px;
+    
+  }
+  main {
+    height: 50px;
+    padding-bottom: 30px;
+  }
+  
+  h1{
+    
+    font-size: 2rem;
+  }
+
+  .inputP1,.inputP2,.inputP3,.inputP4,.inputP5,.inputP6,.inputP7{
+    font-size:0.4rem;
+  }
+  footer{
+    width: 80%;
+  }
+  .attribution{
+    font-size: 0.6rem;
+  }
+  .attribution img{
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .imageCont{
+    overflow: hidden;
+  }
+}
